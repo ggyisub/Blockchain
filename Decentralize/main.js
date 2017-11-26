@@ -1,3 +1,5 @@
+//esup
+//Learn the Blockchain technology
 const SHA256 = require('crypto-js/sha256')
 
 class Block{
@@ -28,7 +30,7 @@ class Block{
 class Blockchain{
     constructor(){
         this.chain = [this.createGenisisBlock()];
-        this.difficulty = 40;
+        this.difficulty = 0;
     }
     createGenisisBlock(){
         return new Block(0, "01/01/2017", "Genesis Block", "0")
